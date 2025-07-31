@@ -7,7 +7,47 @@
     <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Recipe Generator</h1>
+    <h1>🥘Qick & Simple Recipe Generator🍝</h1>
+    <div class="recipe-container">
+      <div id="search-form">
+        <form>
+          <label for="cuisine-type">Select Cuisine Type</label>
+          <select id="cuisine-type" name="selected-cuisine">
+            <option value="italian">Italian</option>
+            <option value="mexican">Mexican</option>
+            <option value="french">Orange</option>
+            <option value="any" selected>Any</option>
+          </select>
+          <label for="protein-type">Select Protein</label>
+          <select id="protein-type" name="selected-protein">
+            <option value="fish">Fish</option>
+            <option value="beef">Beef</option>
+            <option value="chicken">Chicken</option>
+            <option value="plant">Vegetarian</option>
+            <option value="any" selected>Any</option>
+          </select>
+
+          <input type="submit" value="Search" />
+        </form>
+      </div>
+      <div class="recipe-name-display">
+        <h2 id="recipe-name">Spaguetti and Parmesian Chicken</h2>
+
+        <div class="ingredients-instructions">
+          <div id="ingredient list">
+            <ul>
+              <li>Pasta</li>
+              <li>Tomato Sauce</li>
+              <li>Chicken Breast</li>
+              <li>Bread Crumbs</li>
+              <li>2 Eggs</li>
+              <li>Parmesian Cheese</li>
+            </ul>
+          </div>
+          <div id="recipe-instructions">Boil pasta for 11 minutes</div>
+        </div>
+      </div>
+    </div>
     <footer>
       <p>
         This project was coded by

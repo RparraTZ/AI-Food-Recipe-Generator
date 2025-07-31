@@ -1,3 +1,17 @@
-h1 {
-  color: rgb(54, 194, 222);
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/171/442/original/vecteezy_healthy-organic-food-seamless-pattern-vector-white_8858692.jpg?1753943194");
+  background-size: contain;
+  background-repeat: repeat-x, repeat-y;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: center;
+}
+.recipe-container {
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(240, 230, 217);
+  border: 3px solid rgb(133, 97, 43);
+  max-width: 700px;
+  border-radius: 10px;
+  padding: 25px;
 }
