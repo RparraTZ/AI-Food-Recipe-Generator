@@ -12,14 +12,14 @@
       <div id="search-form">
         <form>
           <label for="cuisine-type">Select Cuisine Type</label>
-          <select id="cuisine-type" name="selected-cuisine">
+          <select id="cuisine-type" class="drop-menu" name="selected-cuisine">
             <option value="italian">Italian</option>
             <option value="mexican">Mexican</option>
             <option value="french">Orange</option>
             <option value="any" selected>Any</option>
           </select>
           <label for="protein-type">Select Protein</label>
-          <select id="protein-type" name="selected-protein">
+          <select id="protein-type" class="drop-menu" name="selected-protein">
             <option value="fish">Fish</option>
             <option value="beef">Beef</option>
             <option value="chicken">Chicken</option>
@@ -27,7 +27,7 @@
             <option value="any" selected>Any</option>
           </select>
 
-          <input type="submit" value="Search" />
+          <input type="submit" value="Search" class="search-button" />
         </form>
       </div>
       <div class="recipe-name-display">
@@ -44,7 +44,10 @@
               <li>Parmesian Cheese</li>
             </ul>
           </div>
-          <div id="recipe-instructions">Boil pasta for 11 minutes</div>
+          <div id="recipe-instructions" class="directions">
+            <div class="directions-heading">Directions</div>
+            Boil pasta for 11 minutes
+          </div>
         </div>
       </div>
     </div>

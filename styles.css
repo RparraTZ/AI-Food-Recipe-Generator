@@ -5,13 +5,68 @@ body {
   background-position: center center;
   background-attachment: fixed;
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: rgb(85, 84, 84);
+}
+h1 {
+  color: #feffea;
+  background-color: #2eb872;
+  padding: 3px;
+  border-radius: 12px;
 }
 .recipe-container {
   display: block;
   margin: 0 auto;
-  background-color: rgb(240, 230, 217);
-  border: 3px solid rgb(133, 97, 43);
+  background-color: #feffea;
+  border: 5px solid #2eb872;
   max-width: 700px;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 25px;
+}
+
+.drop-menu {
+  border: none;
+  background-color: rgba(163, 222, 131, 0.5);
+  font-size: 14px;
+  padding: 7px;
+  text-align: center;
+  margin-right: 10px;
+}
+.search-button {
+  border: none;
+  color: #feffea;
+  background-color: rgba(255, 93, 110);
+  font-size: 14px;
+  padding: 7px 15px;
+  border-radius: 10px;
+}
+h2 {
+  color: #ff5d6e;
+  border-top: 2px solid #2eb872;
+  padding-top: 5px;
+}
+a {
+  color: #ff5d6e;
+}
+ul li {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.directions {
+  border-top: 2px solid #2eb872;
+  padding-top: 15px;
+  text-align: left;
+}
+.directions-heading {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  color: #ff5d6e;
+}
+footer {
+  background-color: #a3de83;
+  border-radius: 8px;
+  color: #ff5d6e;
+  font-size: 13px;
 }
