@@ -3,7 +3,7 @@ function displayRecipeData(answer) {
   let resultRecipe = answer.data.answer;
   let displayRecipe = document.getElementById("display-recipe");
   displayRecipe.innerHTML = `${resultRecipe}`;
-  console.log(resultRecipe);
+  //console.log(resultRecipe);
 }
 function searchRecipe(cuisine, protein) {
   loadingMessage.style.visibility = "visible";
