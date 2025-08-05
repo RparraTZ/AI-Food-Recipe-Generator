@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Recipe Generato</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
-    <h1>🥘Qick & Simple Recipe Generator🍝</h1>
+    <h1>🥘 Quick & Simple Recipe Generator 🍝</h1>
     <div class="recipe-container">
       <div id="search-form">
-        <form>
+        <form id="select-cuisine-protein">
           <label for="cuisine-type">Select Cuisine Type</label>
           <select id="cuisine-type" class="drop-menu" name="selected-cuisine">
             <option value="italian">Italian</option>
             <option value="mexican">Mexican</option>
-            <option value="french">Orange</option>
+            <option value="french">French</option>
             <option value="any" selected>Any</option>
           </select>
           <label for="protein-type">Select Protein</label>
@@ -27,29 +28,16 @@
             <option value="any" selected>Any</option>
           </select>
 
-          <input type="submit" value="Search" class="search-button" />
+          <input
+            type="submit"
+            value="Search"
+            class="search-button"
+            id="search-button"
+          />
+          <div id="loading-message">Loading your recipe..</div>
         </form>
       </div>
-      <div class="recipe-name-display">
-        <h2 id="recipe-name">Spaguetti and Parmesian Chicken</h2>
-
-        <div class="ingredients-instructions">
-          <div id="ingredient list">
-            <ul>
-              <li>Pasta</li>
-              <li>Tomato Sauce</li>
-              <li>Chicken Breast</li>
-              <li>Bread Crumbs</li>
-              <li>2 Eggs</li>
-              <li>Parmesian Cheese</li>
-            </ul>
-          </div>
-          <div id="recipe-instructions" class="directions">
-            <div class="directions-heading">Directions</div>
-            Boil pasta for 11 minutes
-          </div>
-        </div>
-      </div>
+      <div class="recipe-name-display" id="display-recipe"></div>
     </div>
     <footer>
       <p>
