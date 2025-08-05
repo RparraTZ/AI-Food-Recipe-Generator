@@ -57,12 +57,23 @@ h1 {
   transition: transform 0.2s ease-in-out;
 }
 #loading-message {
-  margin-top: 10px;
+  margin: 10px auto;
+  display: block;
   background-color: #2eb872;
   color: #feffea;
   padding: 5px 15px;
+  max-width: 50%;
   border-radius: 12px;
   visibility: hidden;
+}
+.blink {
+  animation: blinker 2s ease-in infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 h2 {
   color: #ff5d6e;
