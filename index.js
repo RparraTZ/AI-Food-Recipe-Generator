@@ -8,8 +8,8 @@ function displayRecipeData(answer) {
 function searchRecipe(cuisine, protein) {
   loadingMessage.style.visibility = "visible";
   let context =
-    "Please give short and consice answer. Answer must be only the recipe in the following format example:<h2>Spaguetti</h2> <h3>Ingredients:</> <ul> <li>Spagetti Pasta</li> <li>Tomato Sauce </li> <h3>Instructions:</h3><div>1.-Boil water.</div> <div>2.-add pasta and cook for 10 min </div>";
-  let prompt = `please generate quick and easy ${cuisine} recipe using ${protein} as the main protein?`;
+    "Please give short and consice answer. Answer must be only the recipe in the following format example:<h2>Spaguetti</h2> <h3>Ingredients:</> <ul> <li>Spagetti Pasta</li> <li>Tomato Sauce </li><h3>Instructions:</h3><div>1.-Boil water.</div> <div>2.-add pasta and cook for 10 min </div>";
+  let prompt = `please generate an easy ${cuisine} recipe using ${protein} as the main protein?`;
   let apiKey = "18o7a0b8f4af4db5fa386d3ft8f43fea";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   axios.get(apiUrl).then(displayRecipeData);
